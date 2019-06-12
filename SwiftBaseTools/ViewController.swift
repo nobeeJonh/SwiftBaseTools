@@ -18,7 +18,7 @@ class ViewController: WKBaseViewController {
         return tableView
     }()
     
-    let titles = ["UITableView嵌套CollectionView"]
+    let titles = ["UITableView嵌套CollectionView", "使用FD适配UITableView嵌套CollectionView高度自适应"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +49,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             let ctrl = TableInlayCollectionController()
             ctrl.title = title
             self.navigationController?.pushViewController(ctrl, animated: true)
+        } else if title == "使用FD适配UITableView嵌套CollectionView高度自适应" {
+            let fdCtrl = FDTableInlayCollectionViewController()
+            fdCtrl.title = title
+            self.navigationController?.pushViewController(fdCtrl, animated: true)
         }
     }
 }

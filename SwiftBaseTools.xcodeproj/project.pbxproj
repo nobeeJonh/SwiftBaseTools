@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		62DF3FF41712C45E07C77D58 /* Pods_SwiftBaseTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10704AC4119B55E12ACFB8EF /* Pods_SwiftBaseTools.framework */; };
+		E410254D22B07E70003547BD /* FDTableInlayCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E410254C22B07E70003547BD /* FDTableInlayCollectionViewController.swift */; };
+		E410255022B07F0B003547BD /* FDTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E410254E22B07F0B003547BD /* FDTableViewCell.swift */; };
+		E410255122B07F0B003547BD /* FDTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E410254F22B07F0B003547BD /* FDTableViewCell.xib */; };
 		E45795DD22AF8BC900472A3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45795DC22AF8BC900472A3C /* AppDelegate.swift */; };
 		E45795DF22AF8BC900472A3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45795DE22AF8BC900472A3C /* ViewController.swift */; };
 		E45795E222AF8BC900472A3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E45795E022AF8BC900472A3C /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 /* Begin PBXFileReference section */
 		10704AC4119B55E12ACFB8EF /* Pods_SwiftBaseTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftBaseTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		437C84FD781DE9813F3E5A3B /* Pods-SwiftBaseTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseTools.debug.xcconfig"; path = "Target Support Files/Pods-SwiftBaseTools/Pods-SwiftBaseTools.debug.xcconfig"; sourceTree = "<group>"; };
+		E410254C22B07E70003547BD /* FDTableInlayCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDTableInlayCollectionViewController.swift; sourceTree = "<group>"; };
+		E410254E22B07F0B003547BD /* FDTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDTableViewCell.swift; sourceTree = "<group>"; };
+		E410254F22B07F0B003547BD /* FDTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FDTableViewCell.xib; sourceTree = "<group>"; };
 		E45795D922AF8BC900472A3C /* SwiftBaseTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftBaseTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45795DC22AF8BC900472A3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E45795DE22AF8BC900472A3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,7 +66,6 @@
 				437C84FD781DE9813F3E5A3B /* Pods-SwiftBaseTools.debug.xcconfig */,
 				EFC73846FA3A8043C3D3E141 /* Pods-SwiftBaseTools.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,6 +119,9 @@
 				E45795F422AF931600472A3C /* CollectionViewTableViewCell.xib */,
 				E45795F722AF93E200472A3C /* CollectionViewContentCell.swift */,
 				E45795F822AF93E200472A3C /* CollectionViewContentCell.xib */,
+				E410254C22B07E70003547BD /* FDTableInlayCollectionViewController.swift */,
+				E410254E22B07F0B003547BD /* FDTableViewCell.swift */,
+				E410254F22B07F0B003547BD /* FDTableViewCell.xib */,
 			);
 			path = "Table嵌套CollectionView";
 			sourceTree = "<group>";
@@ -191,6 +199,7 @@
 				E45795F622AF931600472A3C /* CollectionViewTableViewCell.xib in Resources */,
 				E45795E222AF8BC900472A3C /* Main.storyboard in Resources */,
 				E45795FA22AF93E200472A3C /* CollectionViewContentCell.xib in Resources */,
+				E410255122B07F0B003547BD /* FDTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,12 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45795FD22AF957800472A3C /* UIKit+Extension.swift in Sources */,
+				E410255022B07F0B003547BD /* FDTableViewCell.swift in Sources */,
 				E45795F522AF931600472A3C /* CollectionViewTableViewCell.swift in Sources */,
 				E45795F022AF8E4A00472A3C /* TableInlayCollectionController.swift in Sources */,
 				E45795F222AF8E5300472A3C /* WKBaseViewController.swift in Sources */,
 				E45795DF22AF8BC900472A3C /* ViewController.swift in Sources */,
 				E45795F922AF93E200472A3C /* CollectionViewContentCell.swift in Sources */,
 				E45795DD22AF8BC900472A3C /* AppDelegate.swift in Sources */,
+				E410254D22B07E70003547BD /* FDTableInlayCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

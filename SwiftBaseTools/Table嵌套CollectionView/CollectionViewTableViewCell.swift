@@ -10,16 +10,16 @@ import UIKit
 
 class CollectionViewTableViewCell: UITableViewCell, RegisterCellFromNib {
 
-    @IBOutlet weak var bgViewH: NSLayoutConstraint!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
+    @IBOutlet weak var collectionH: NSLayoutConstraint!
     
     var titles = [String]() {
         didSet {
             collectionView.reloadData()
             collectionView.setNeedsLayout()
             let height = flowLayout.collectionViewContentSize.height
-            bgViewH.constant = height
+            collectionH.constant = height
         }
     }
 

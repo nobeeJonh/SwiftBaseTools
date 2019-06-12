@@ -18,7 +18,7 @@ class ViewController: WKBaseViewController {
         return tableView
     }()
     
-    let titles = ["UITableView嵌套CollectionView", "使用FD适配UITableView嵌套CollectionView高度自适应"]
+    let titles = ["UITableView嵌套CollectionView", "使用FD适配UITableView嵌套CollectionView高度自适应", "滚动到目标日期"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +53,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             let fdCtrl = FDTableInlayCollectionViewController()
             fdCtrl.title = title
             self.navigationController?.pushViewController(fdCtrl, animated: true)
+        } else if title == "滚动到目标日期" {
+            let pickerCtrl = PickerViewController()
+            pickerCtrl.title = title
+            self.navigationController?.pushViewController(pickerCtrl, animated: true)
         }
     }
 }

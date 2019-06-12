@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SnapKit
 class WKBaseViewController: UIViewController {
 
     override func viewDidLoad() {

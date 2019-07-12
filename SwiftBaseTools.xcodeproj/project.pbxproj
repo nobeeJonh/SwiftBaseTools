@@ -25,6 +25,8 @@
 		E45795F922AF93E200472A3C /* CollectionViewContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45795F722AF93E200472A3C /* CollectionViewContentCell.swift */; };
 		E45795FA22AF93E200472A3C /* CollectionViewContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45795F822AF93E200472A3C /* CollectionViewContentCell.xib */; };
 		E45795FD22AF957800472A3C /* UIKit+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45795FC22AF957800472A3C /* UIKit+Extension.swift */; };
+		E4E1EA9A22D88DDB00AAFFBF /* CustomTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E1EA9922D88DDB00AAFFBF /* CustomTabbarController.swift */; };
+		E4E1EA9C22D8911200AAFFBF /* TabbarPalyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E1EA9B22D8911200AAFFBF /* TabbarPalyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		E45795F722AF93E200472A3C /* CollectionViewContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewContentCell.swift; sourceTree = "<group>"; };
 		E45795F822AF93E200472A3C /* CollectionViewContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewContentCell.xib; sourceTree = "<group>"; };
 		E45795FC22AF957800472A3C /* UIKit+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Extension.swift"; sourceTree = "<group>"; };
+		E4E1EA9922D88DDB00AAFFBF /* CustomTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarController.swift; sourceTree = "<group>"; };
+		E4E1EA9B22D8911200AAFFBF /* TabbarPalyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarPalyView.swift; sourceTree = "<group>"; };
 		EFC73846FA3A8043C3D3E141 /* Pods-SwiftBaseTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftBaseTools.release.xcconfig"; path = "Target Support Files/Pods-SwiftBaseTools/Pods-SwiftBaseTools.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +117,7 @@
 				E45795FB22AF956600472A3C /* Tools */,
 				E45795EE22AF8E0E00472A3C /* Table嵌套CollectionView */,
 				E410255222B0861F003547BD /* 滚动到目标日期 */,
+				E4E1EA9622D880E500AAFFBF /* 自定义Tabbar */,
 				E45795DC22AF8BC900472A3C /* AppDelegate.swift */,
 				E45795DE22AF8BC900472A3C /* ViewController.swift */,
 				E45795F122AF8E5300472A3C /* WKBaseViewController.swift */,
@@ -146,6 +151,15 @@
 				E410255522B086C6003547BD /* Constans.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		E4E1EA9622D880E500AAFFBF /* 自定义Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				E4E1EA9922D88DDB00AAFFBF /* CustomTabbarController.swift */,
+				E4E1EA9B22D8911200AAFFBF /* TabbarPalyView.swift */,
+			);
+			path = "自定义Tabbar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +282,7 @@
 			files = (
 				E410255422B0865E003547BD /* PickerViewController.swift in Sources */,
 				E45795FD22AF957800472A3C /* UIKit+Extension.swift in Sources */,
+				E4E1EA9C22D8911200AAFFBF /* TabbarPalyView.swift in Sources */,
 				E410255022B07F0B003547BD /* FDTableViewCell.swift in Sources */,
 				E45795F522AF931600472A3C /* CollectionViewTableViewCell.swift in Sources */,
 				E45795F022AF8E4A00472A3C /* TableInlayCollectionController.swift in Sources */,
@@ -276,6 +291,7 @@
 				E45795DF22AF8BC900472A3C /* ViewController.swift in Sources */,
 				E45795F922AF93E200472A3C /* CollectionViewContentCell.swift in Sources */,
 				E45795DD22AF8BC900472A3C /* AppDelegate.swift in Sources */,
+				E4E1EA9A22D88DDB00AAFFBF /* CustomTabbarController.swift in Sources */,
 				E410254D22B07E70003547BD /* FDTableInlayCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

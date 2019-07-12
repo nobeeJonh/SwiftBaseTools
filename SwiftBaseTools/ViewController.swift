@@ -18,7 +18,7 @@ class ViewController: WKBaseViewController {
         return tableView
     }()
     
-    let titles = ["UITableView嵌套CollectionView", "使用FD适配UITableView嵌套CollectionView高度自适应", "滚动到目标日期"]
+    let titles = ["UITableView嵌套CollectionView", "使用FD适配UITableView嵌套CollectionView高度自适应", "滚动到目标日期", "自定义tabBar"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +57,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
             let pickerCtrl = PickerViewController()
             pickerCtrl.title = title
             self.navigationController?.pushViewController(pickerCtrl, animated: true)
+        } else if title == "自定义tabBar" {
+            let tabctrl = CustomTabbarController()
+            tabctrl.title = title
+            self.navigationController?.pushViewController(tabctrl, animated: true)
         }
     }
 }
